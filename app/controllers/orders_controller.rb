@@ -6,7 +6,7 @@ class OrdersController < ApplicationController
     if @order.save
       render json: @order, status: :created
     else
-      render json: order.errors, status: :unprocessable_entity
+      render json: @order.errors, status: :unprocessable_entity
     end
   end
 
@@ -21,7 +21,6 @@ class OrdersController < ApplicationController
   end
 
   def order_params
-    params.require(:order).permit(:name, :phone_number, :restaurant_id, :address,
-    order_products_attributes: %i[quantity comment product_id])
+    params.require(:order).permit(:name, :phone_number, :restaurant_id, :neighborhood, :street, :number, :city, :complement, order_products_attributes: %i[quantity product_id])
   end
 end
