@@ -1,0 +1,9 @@
+json.id order.id
+json.restaurant_id order.restaurant_id
+json.total_value order.total_value
+json.status order.status
+json.city restaurant.city
+json.street restaurant.street
+json.neighborhood restaurant.neighborhood
+json.number restaurant.number
+json.complement restaurant.complement
