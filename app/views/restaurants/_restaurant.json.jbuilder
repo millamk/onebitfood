@@ -6,7 +6,6 @@ json.city restaurant.city
 json.street restaurant.street
 json.neighborhood restaurant.neighborhood
 json.number restaurant.number
-json.category_title restaurant.category.title
 
 json.complement restaurant.complement
 json.image_url polymorphic_url(restaurant.image) if restaurant.image.attached?
